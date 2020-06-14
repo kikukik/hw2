@@ -158,4 +158,9 @@ def actual_plotting():
     plt.figure()
     plt.scatter(mpoints[:,0],mpoints[:,1],s=0.5)
     plt.title("decision boundary") 
+    plt.figure()
+    plt.title("likelihood x prior and decbound")
+    plt.contour(X,Y,Z1,10)
+    plt.contour(X,Y,Z2,10)
+    plt.scatter(mpoints[:,0],mpoints[:,1],s=0.5)
     return
