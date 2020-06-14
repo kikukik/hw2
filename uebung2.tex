@@ -56,6 +56,17 @@ ngerman,
 			\begin{align}
 				\hat{\mu}&=\frac{1}{n}\sni x_i\;\;.
 			\end{align}
+			Secondly, we need to compute the derivative w.r.t $\Sigma$. To do that, we will need some results from mathematical classes. The following is used without prove:
+			\begin{itemize}
+				\item Cyclic permutations of a matrix product do not change the trace of it:\begin{align*}
+					tr\left[ ABC\right] = tr\left[ CAB\right] 
+				\end{align*}
+				\item The trace of a scalar is the scalar itself. In particular: the result of a quadratic form $x^T Ax$ is a scalar, such that:\begin{align*}
+					x^T Ax=tr\left[ x^TAx\right] =tr\left[ x^TxA\right] 
+				\end{align*}
+				\item $\frac{d}{dA}tr\left[ AB\right] =B^T$
+				\item $\frac{d}{dA}\ln|A|=A^{-T}$
+			\end{itemize} 
 		\end{subtask}
 	\end{task}
 	
