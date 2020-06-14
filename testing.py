@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 link1="../hw2/dataSets/densEst1.txt"
 link2="../hw2/dataSets/densEst2.txt"
 link3="../hw2/dataSets/densEstCombined.txt"
-
+#test
 def merge_txt(inp):
     with open('../hw2/dataSets/densEstCombined.txt', 'w') as outfile:
         for fname in inp:

@@ -32,7 +32,29 @@ ngerman,
 				l(\mu,\Sigma,x_1,...,x_n)=\ln(\prod_{i=1}^n p(x_i|\mu,\Sigma))=\sni\ln(p(x_i|\mu,\Sigma))
 			\end{align*}
 			for the Gaussian probability density
-			\begin{align} p(x|\mu,\Sigma)=\frac{1}{\sqrt{(2\pi)^k|\Sigma|}}\exp\left( -\frac{1}{2}(x-\mu)^T\Sigma(x-\mu)\right)
+			\begin{align} p(x|\mu,\Sigma)=\frac{1}{\sqrt{(2\pi)^k|\Sigma|}}\exp\left( -\frac{1}{2}(x-\mu)^T\Sigma(x-\mu)\right)\;.
+			\end{align}
+			We receive
+			\begin{align}
+			l(\mu,\Sigma):=l(\mu,\Sigma,x_1,...,x_n)&=\sni\left( -\frac{k}{2}\ln(2\pi)-\frac{1}{2}ln(|\Sigma|)-\frac{1}{2}(x_i-\mu)^T\Sigma(x_i-\mu)\right) \\
+			&=-\frac{nk}{2}\ln(2\pi)-\frac{n}{2}ln(|\Sigma|)-\frac{1}{2}\sni (x_i-\mu)^T\Sigma(x_i-\mu)\;\;.
+			\end{align}
+			We compute the derivatives w.r.t. $\mu$ and $\Sigma$ and set them equal to zero. This yields
+			\begin{align*}
+\frac{d}{d\mu}l(\mu,\Sigma,x_1,...,x_n)&=\frac{d}{d\mu}\; -\frac{1}{2}\sni (x_i-\mu)^T\Sigma (x_i-\mu)\\ &= -\sni \frac{d}{d\mu}\frac{1}{2}(x_i-\mu)^T\Sigma (x_i-\mu)\;\;.
+			\end{align*}
+			Using the matrix identity $\frac{d}{dw}\frac{w^T Aw}{dw}=2Aw$ which holds if $w$ does not depend on $A$ and if $A$ is symmetric, we get (with $w=(x-\mu), dw=-d\mu$)
+			\begin{align*}
+			0&\stackrel{!}{=}\frac{d}{d\mu}l(\mu,\Sigma,x_1,...,x_n)\\
+			0&\stackrel{!}{=}-\sni \Sigma^{-1}(x_i-\mu)	\;\;.
+			\end{align*}
+			Finally, we use that $\Sigma^{-1}$ is positive definite, so we can leave it out here and get
+			\begin{align*}
+				0&\stackrel{!}{=}n\mu-\sni x_i\;\;,
+			\end{align*}
+			which is solved for the MLE-estimate
+			\begin{align}
+				\hat{\mu}&=\frac{1}{n}\sni x_i\;\;.
 			\end{align}
 		\end{subtask}
 	\end{task}
