@@ -37,7 +37,7 @@ ngerman,
 			We receive
 			\begin{align}
 			l(\mu,\Sigma):=l(\mu,\Sigma,x_1,...,x_n)&=\sni\left( -\frac{k}{2}\ln(2\pi)-\frac{1}{2}ln(|\Sigma|)-\frac{1}{2}(x_i-\mu)^T\Sigma(x_i-\mu)\right) \\
-			&=-\frac{nk}{2}\ln(2\pi)-\frac{n}{2}ln(|\Sigma|)-\frac{1}{2}\sni (x_i-\mu)^T\Sigma(x_i-\mu)\;\;.
+			&=-\frac{nk}{2}\ln(2\pi)-\frac{n}{2}ln(|\Sigma|)-\frac{1}{2}\sni (x_i-\mu)^T\Sigma(x_i-\mu)\;\;.\label{lfkt}
 			\end{align}
 			We compute the derivatives w.r.t. $\mu$ and $\Sigma$ and set them equal to zero. This yields
 			\begin{align*}
@@ -66,7 +66,27 @@ ngerman,
 				\end{align*}
 				\item $\frac{d}{dA}tr\left[ AB\right] =B^T$
 				\item $\frac{d}{dA}\ln|A|=A^{-T}$
-			\end{itemize} 
+			\end{itemize}
+		As a first result of these assumptions, we can show, that\begin{align*}
+			\frac{d}{dA}x^T Ax=\frac{d}{dA}tr\left[ x^T xA\right] =\left[ xx^T\right] ^T=xx^T\;.
+		\end{align*} 
+		We now got the tools to re-write the log-likelihood function in (\ref{lfkt}) to
+		\begin{align*}
+			l(\mu,\Sigma)&=-\frac{nk}{2}\ln(2\pi)-\frac{n}{2}ln(|\Sigma|)-\frac{1}{2}\sni (x_i-\mu)^T\Sigma(x_i-\mu)\\&=C+\frac{n}{2}ln(|\Sigma^{-1}|)-\frac{1}{2}\sni tr\left[ (x_i-\mu)(x_i-\mu)^T \Sigma^{-1}\right] 
+		\end{align*}
+		for a constant C, and taking the derivative w.r.t $\Sigma^{-1}$ yields
+		\begin{align*}
+			\frac{d}{d\Sigma^{-1}}l(\mu,\Sigma)=\frac{n}{2}\Sigma^T-\frac{1}{2}\sni(x_i-\mu)(x_i-\mu)^T
+		\end{align*}
+		and plugging in $\hat{\mu}$ as an estimation of $\mu$ and setting equal to zero finally gives us
+		\begin{align*}
+			0&\stackrel{!}{=}\frac{d}{d\Sigma^{-1}}l(\hat{\mu},\Sigma)\\
+			0&\stackrel{!}{=}\frac{n}{2}\Sigma^T-\frac{1}{2}\sni(x_i-\hat{\mu})(x_i-\hat{\mu})^T
+		\end{align*}
+		which is solved for the biased MLE estimate
+		\begin{align}
+			\tilde{\Sigma}=\frac{1}{n}\sni (x_i-\hat{\mu})(x_i-\hat{\mu})^T
+		\end{align}
 		\end{subtask}
 	\end{task}
 	
