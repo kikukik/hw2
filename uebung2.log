@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.14)  14 JUN 2020 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.14)  14 JUN 2020 16:07
 entering extended mode
 **./uebung2.tex
 (uebung2.tex
@@ -1113,75 +1113,84 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (uebung2.aux)
+
+(C:\Users\No-Pa\AppData\Roaming\MiKTeX\2.9\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count305
+\float@exts=\toks34
+\float@box=\box70
+\@float@everytoks=\toks35
+\@floatcapt=\box71
+)
+(uebung2.aux)
 \openout1 = `uebung2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 19.
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
-8.
+9.
 
 (C:\Users\No-Pa\AppData\Roaming\MiKTeX\2.9\tex/latex/cyrillic\t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 19.
 LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 1
-8.
+9.
 
 (C:\Users\No-Pa\AppData\Roaming\MiKTeX\2.9\tex/latex/ly1\ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-Package scrbase Info: activating english \contentsname on input line 18.
-Package scrbase Info: activating english \listfigurename on input line 18.
-Package scrbase Info: activating english \listtablename on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+Package scrbase Info: activating english \contentsname on input line 19.
+Package scrbase Info: activating english \listfigurename on input line 19.
+Package scrbase Info: activating english \listtablename on input line 19.
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
+\scratchcounter=\count306
 \scratchdimen=\dimen262
-\scratchbox=\box70
-\nofMPsegments=\count306
-\nofMParguments=\count307
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count308
+\scratchbox=\box72
+\nofMPsegments=\count307
+\nofMParguments=\count308
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count309
 \MPscratchDim=\dimen263
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks35
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
+\everyMPtoPDFconversion=\toks37
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\c@mv@tabular=\count311
-\c@mv@boldtabular=\count312
-LaTeX Info: Redefining \microtypecontext on input line 18.
+\c@mv@tabular=\count312
+\c@mv@boldtabular=\count313
+LaTeX Info: Redefining \microtypecontext on input line 19.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 18.
+LaTeX Info: Redefining \showhyphens on input line 19.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1224,8 +1233,8 @@ File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box71
-Package hyperref Info: Link coloring OFF on input line 18.
+\AtBeginShipoutBox=\box73
+Package hyperref Info: Link coloring OFF on input line 19.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1236,11 +1245,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 tring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count313
+\c@section@level=\count314
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
  (uebung2.out) (uebung2.out)
 \@outlinefile=\write3
 \openout3 = `uebung2.out'.
@@ -1252,7 +1261,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 18.
+(scrartcl)           before \begin{document} on input line 19.
 
 (C:\Users\No-Pa\AppData\Roaming\MiKTeX\2.9\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
@@ -1262,49 +1271,49 @@ File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
 Package auxhook Info: \AddLineBeginMainAux comes a little late,
 (auxhook)             because the main .aux file is already opened on input lin
 e 168.
-\BKM@id=\count314
+\BKM@id=\count315
 ))
-Package scrbase Info: activating english \sheetname on input line 18.
-Package scrbase Info: activating english \taskname on input line 18.
-Package scrbase Info: activating english \solutionname on input line 18.
-Package scrbase Info: activating english \StudentNamename on input line 18.
-Package scrbase Info: activating english \StudentIDname on input line 18.
-Package scrbase Info: activating english \PointName on input line 18.
-Package scrbase Info: activating english \PointsName on input line 18.
-\c@lstlisting=\count315
+Package scrbase Info: activating english \sheetname on input line 19.
+Package scrbase Info: activating english \taskname on input line 19.
+Package scrbase Info: activating english \solutionname on input line 19.
+Package scrbase Info: activating english \StudentNamename on input line 19.
+Package scrbase Info: activating english \StudentIDname on input line 19.
+Package scrbase Info: activating english \PointName on input line 19.
+Package scrbase Info: activating english \PointsName on input line 19.
+\c@lstlisting=\count316
 LaTeX Font Info:    Trying to load font information for T1+Roboto-LF on input l
-ine 26.
+ine 27.
 
 (C:\Users\No-Pa\AppData\Roaming\MiKTeX\2.9\tex/latex/roboto\t1roboto-lf.fd
 File: T1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for T1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 26.
+(Font)              `T1/Roboto-LF/regular/n' on input line 27.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 26.
+(Font)              scaled to size 10.0pt on input line 27.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Roboto-LF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 26.
+(Font)              `T1/Roboto-LF/bold/n' on input line 27.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 26.
+(Font)              scaled to size 10.0pt on input line 27.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 26.
+(Font)              `T1/Roboto-LF/bold/n' on input line 27.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 20.74pt on input line 26.
+(Font)              scaled to size 20.74pt on input line 27.
 <tuda_logo.pdf, id=3, 156.48964pt x 62.59586pt>
 File: tuda_logo.pdf Graphic file (type pdf)
 <use tuda_logo.pdf>
-Package pdftex.def Info: tuda_logo.pdf  used on input line 26.
+Package pdftex.def Info: tuda_logo.pdf  used on input line 27.
 (pdftex.def)             Requested size: 156.49402pt x 62.59605pt.
 
 (C:\Users\No-Pa\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
@@ -1313,7 +1322,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\No-Pa\AppData\Roaming\MiKTeX\2.9\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
@@ -1323,50 +1332,167 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 54.
+(Font)              `T1/Roboto-LF/regular/n' on input line 55.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 9.0pt on input line 54.
+(Font)              scaled to size 9.0pt on input line 55.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 54.
+(Font)              scaled to size 9.0pt on input line 55.
 
 [1
 
 
 {C:/Users/No-Pa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./tuda_logo
 .pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
- [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
+LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on inp
+ut line 62.
+
+(C:\Users\No-Pa\AppData\Roaming\MiKTeX\2.9\tex/latex/xcharter\ts1xcharter-tlf.f
+d
+File: TS1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for TS1/XCharte
+r-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 62.
+Package microtype Info: Character `textlbrackdbl ' is missing
+(microtype)             in font `TS1/XCharter-TLF/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textrbrackdbl ' is missing
+(microtype)             in font `TS1/XCharter-TLF/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `texttildelow ' is missing
+(microtype)             in font `TS1/XCharter-TLF/m/n/10'.
+(microtype)             Ignoring protrusion settings for this character.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 95.
+ [2] [3]
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 143.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 151.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 155.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 170.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 170.
+
+[4]
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 203.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 204.
+<d1plot.png, id=133, 374.39874pt x 252.945pt>
+File: d1plot.png Graphic file (type png)
+<use d1plot.png>
+Package pdftex.def Info: d1plot.png  used on input line 237.
+(pdftex.def)             Requested size: 409.72125pt x 276.82387pt.
+<d2plot.png, id=135, 359.3425pt x 252.945pt>
+File: d2plot.png Graphic file (type png)
+<use d2plot.png>
+Package pdftex.def Info: d2plot.png  used on input line 241.
+(pdftex.def)             Requested size: 409.72125pt x 288.42976pt.
+ [5] [6pdfTeX warning (ext4): destination with the same identifier (name{figure
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.248 	\end{align*}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.248 	\end{align*}
+                    <./d1plot.png> <./d2plot.png>]
+Overfull \hbox (3.85562pt too wide) in paragraph at lines 268--269
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[7]
+Overfull \hbox (21.8558pt too wide) in paragraph at lines 320--321
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<likexprior.png, id=235, 373.395pt x 264.99pt>
+File: likexprior.png Graphic file (type png)
+<use likexprior.png>
+Package pdftex.def Info: likexprior.png  used on input line 329.
+(pdftex.def)             Requested size: 373.39409pt x 264.98935pt.
+<pc1x.png, id=236, 355.3275pt x 264.99pt>
+File: pc1x.png Graphic file (type png)
+<use pc1x.png>
+Package pdftex.def Info: pc1x.png  used on input line 332.
+(pdftex.def)             Requested size: 355.32661pt x 264.98935pt.
+<pc2x.png, id=237, 355.3275pt x 264.99pt>
+File: pc2x.png Graphic file (type png)
+<use pc2x.png>
+Package pdftex.def Info: pc2x.png  used on input line 335.
+(pdftex.def)             Requested size: 355.32661pt x 264.98935pt.
+[8 <./likexprior.png>]
+<dec1.png, id=270, 371.3875pt x 264.99pt>
+File: dec1.png Graphic file (type png)
+<use dec1.png>
+Package pdftex.def Info: dec1.png  used on input line 338.
+(pdftex.def)             Requested size: 371.38658pt x 264.98935pt.
+<dec2.png, id=271, 371.3875pt x 264.99pt>
+File: dec2.png Graphic file (type png)
+<use dec2.png>
+Package pdftex.def Info: dec2.png  used on input line 341.
+(pdftex.def)             Requested size: 371.38658pt x 264.98935pt.
+ [9 <./pc1x.png> <./pc2x.png>]
+<dec3.png, id=278, 371.3875pt x 264.99pt>
+File: dec3.png Graphic file (type png)
+<use dec3.png>
+Package pdftex.def Info: dec3.png  used on input line 344.
+(pdftex.def)             Requested size: 371.38658pt x 264.98935pt.
+ [10 <./dec1.png> <./dec2.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 349.
+ [11 <./dec3.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 349.
  (uebung2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 349.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 349.
 Package rerunfilecheck Info: File `uebung2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23481 strings out of 480797
- 435386 string characters out of 2905361
- 980873 words of memory out of 3000000
- 39098 multiletter control sequences out of 15000+200000
- 573576 words of font info for 68 fonts, out of 3000000 for 9000
+ 24376 strings out of 480797
+ 445870 string characters out of 2905361
+ 1135062 words of memory out of 3000000
+ 39754 multiletter control sequences out of 15000+200000
+ 582503 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,21n,81p,10131b,912s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/roboto/rbto_b5rac7
-.enc}{C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/xcharter/xch_uy
-5hgr.enc}<C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/type1/google/roboto/R
-oboto-Bold.pfb><C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/type1/google/ro
-boto/Roboto-Regular.pfb><C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/type1/
-public/xcharter/XCharter-Roman.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on uebung2.pdf (2 pages, 689024 bytes).
+ 59i,21n,81p,10131b,2342s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\No-Pa\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1000.pk>{C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/xcharter
+/xch_uy5hgr.enc}{C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/xcha
+rter/xch_q7u3cc.enc}{C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/
+roboto/rbto_b5rac7.enc}<C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/type1/g
+oogle/roboto/Roboto-Bold.pfb><C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/t
+ype1/google/roboto/Roboto-Regular.pfb><C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.
+9/fonts/type1/public/xcharter/XCharter-Bold.pfb><C:/Users/No-Pa/AppData/Roaming
+/MiKTeX/2.9/fonts/type1/public/xcharter/XCharter-Roman.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on uebung2.pdf (11 pages, 981304 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 10774 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 209 named destinations out of 1000 (max. 500000)
+ 12894 words of extra memory for PDF output out of 14400 (max. 10000000)
 

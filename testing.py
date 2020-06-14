@@ -9,14 +9,6 @@ import matplotlib.pyplot as plt
 link1="../hw2/dataSets/densEst1.txt"
 link2="../hw2/dataSets/densEst2.txt"
 link3="../hw2/dataSets/densEstCombined.txt"
-#test
-def merge_txt(inp):
-    with open('../hw2/dataSets/densEstCombined.txt', 'w') as outfile:
-        for fname in inp:
-            with open(fname) as infile:
-                for line in infile:
-                    outfile.write(line)
-    return
 
 def get_lengths():
     l1=0;
@@ -31,7 +23,7 @@ def get_priors(l1,l2):
     p_C1=l1/(l1+l2)
     p_C2=l2/(l1+l2)
     return(p_C1,p_C2)
-    
+
 def extract_data(t):
     a=np.empty((0,2),float)
     for line in t:
@@ -103,6 +95,7 @@ def plot(link):
     plt.colorbar()
     plt.scatter(a[:,0],a[:,1],alpha=1,c="white",s=0.8)
     return
+
 def postplot(link):
     g=extract_data(open(link3))
     a=extract_data(open(link))
@@ -134,12 +127,8 @@ def actual_plotting():
     X,Y,Z1,p1=postplot(link1)
     Z2,p2=postplot(link2)[2:4]
     S=np.add(Z1,Z2)
-    print(S)
     Z1neu=np.divide(Z1,S)
     Z2neu=np.divide(Z2,S)
-   # for i in np.arange(0,9,1):
-  #      for j in np.arange(0,9,1):
-    #        print("Z1=", Z1[i,j], "Z1neu=",Z1neu[i,j])
     plt.contour(X,Y,Z1,10)
     plt.contour(X,Y,Z2,10)
     plt.title("likelihood x prior")
@@ -169,6 +158,9 @@ def actual_plotting():
     plt.figure()
     plt.scatter(mpoints[:,0],mpoints[:,1],s=0.5)
     plt.title("decision boundary") 
-
+    plt.figure()
+    plt.title("likelihood x prior and decbound")
+    plt.contour(X,Y,Z1,10)
+    plt.contour(X,Y,Z2,10)
+    plt.scatter(mpoints[:,0],mpoints[:,1],s=0.5)
     return
-actual_plotting()

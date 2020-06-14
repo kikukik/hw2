@@ -12,6 +12,7 @@ ngerman,
 \usepackage{graphicx}
 \usepackage{lipsum}% For example text
 \usepackage{listings}
+\usepackage{float}
 \graphicspath{ {./images/} }
 \newcommand{\sni}{\sum_{i=1}^{n}}
 
@@ -32,12 +33,12 @@ ngerman,
 				l(\mu,\Sigma,x_1,...,x_n)=\ln(\prod_{i=1}^n p(x_i|\mu,\Sigma))=\sni\ln(p(x_i|\mu,\Sigma))
 			\end{align*}
 			for the Gaussian probability density
-			\begin{align} p(x|\mu,\Sigma)=\frac{1}{\sqrt{(2\pi)^k|\Sigma|}}\exp\left( -\frac{1}{2}(x-\mu)^T\Sigma(x-\mu)\right)\;.
+			\begin{align}\label{gaussian} p(x|\mu,\Sigma)=\frac{1}{\sqrt{(2\pi)^k|\Sigma|}}\exp\left( -\frac{1}{2}(x-\mu)^T\Sigma(x-\mu)\right)\;.
 			\end{align}
 			We receive
 			\begin{align}
 			l(\mu,\Sigma):=l(\mu,\Sigma,x_1,...,x_n)&=\sni\left( -\frac{k}{2}\ln(2\pi)-\frac{1}{2}ln(|\Sigma|)-\frac{1}{2}(x_i-\mu)^T\Sigma(x_i-\mu)\right) \\
-			&=-\frac{nk}{2}\ln(2\pi)-\frac{n}{2}ln(|\Sigma|)-\frac{1}{2}\sni (x_i-\mu)^T\Sigma(x_i-\mu)\;\;.
+			&=-\frac{nk}{2}\ln(2\pi)-\frac{n}{2}ln(|\Sigma|)-\frac{1}{2}\sni (x_i-\mu)^T\Sigma(x_i-\mu)\;\;.\label{lfkt}
 			\end{align}
 			We compute the derivatives w.r.t. $\mu$ and $\Sigma$ and set them equal to zero. This yields
 			\begin{align*}
@@ -53,10 +54,296 @@ ngerman,
 				0&\stackrel{!}{=}n\mu-\sni x_i\;\;,
 			\end{align*}
 			which is solved for the MLE-estimate
-			\begin{align}
+			\begin{align}\label{mean}
 				\hat{\mu}&=\frac{1}{n}\sni x_i\;\;.
 			\end{align}
+			Secondly, we need to compute the derivative w.r.t $\Sigma$. To do that, we will need some results from mathematical classes. The following is used without prove:
+			\begin{itemize}
+				\item Cyclic permutations of a matrix product do not change the trace of it:\begin{align*}
+					tr\left[ ABC\right] = tr\left[ CAB\right] 
+				\end{align*}
+				\item The trace of a scalar is the scalar itself. In particular: the result of a quadratic form $x^T Ax$ is a scalar, such that:\begin{align*}
+					x^T Ax=tr\left[ x^TAx\right] =tr\left[ x^TxA\right] 
+				\end{align*}
+				\item $\frac{d}{dA}tr\left[ AB\right] =B^T$
+				\item $\frac{d}{dA}\ln|A|=A^{-T}$
+			\end{itemize}
+		As a first result of these assumptions, we can show, that\begin{align*}
+			\frac{d}{dA}x^T Ax=\frac{d}{dA}tr\left[ x^T xA\right] =\left[ xx^T\right] ^T=xx^T\;.
+		\end{align*} 
+		We now got the tools to re-write the log-likelihood function in (\ref{lfkt}) to
+		\begin{align*}
+			l(\mu,\Sigma)&=-\frac{nk}{2}\ln(2\pi)-\frac{n}{2}ln(|\Sigma|)-\frac{1}{2}\sni (x_i-\mu)^T\Sigma(x_i-\mu)\\&=C+\frac{n}{2}ln(|\Sigma^{-1}|)-\frac{1}{2}\sni tr\left[ (x_i-\mu)(x_i-\mu)^T \Sigma^{-1}\right] 
+		\end{align*}
+		for a constant C, and taking the derivative w.r.t $\Sigma^{-1}$ yields
+		\begin{align*}
+			\frac{d}{d\Sigma^{-1}}l(\mu,\Sigma)=\frac{n}{2}\Sigma^T-\frac{1}{2}\sni(x_i-\mu)(x_i-\mu)^T
+		\end{align*}
+		and plugging in $\hat{\mu}$ as an estimation of $\mu$ and setting equal to zero finally gives us
+		\begin{align*}
+			0&\stackrel{!}{=}\frac{d}{d\Sigma^{-1}}l(\hat{\mu},\Sigma)\\
+			0&\stackrel{!}{=}\frac{n}{2}\Sigma^T-\frac{1}{2}\sni(x_i-\hat{\mu})(x_i-\hat{\mu})^T
+		\end{align*}
+		which is solved for the (biased) MLE estimate
+		\begin{align}\label{bsigma}
+			\tilde{\Sigma}=\frac{1}{n}\sni (x_i-\hat{\mu})(x_i-\hat{\mu})^T
+		\end{align}
 		\end{subtask}
+	\begin{subtask}
+		We compute the prior probabilities of C1 and C2, using the following python code. We read the number of data points in each class and divide it by the sum of total data points in both classes.
+		\begin{lstlisting}[language=Python]
+	import numpy as np
+	
+	link1="../hw2/dataSets/densEst1.txt"
+	link2="../hw2/dataSets/densEst2.txt"
+	
+	def get_lengths():
+		l1=0;
+		l2=0;
+		for line in open(link1):
+			l1=l1+1
+		for line2 in open(link2):
+			l2=l2+1
+		return (l1,l2)    
+	
+	def get_priors(l1,l2):
+		p_C1=l1/(l1+l2)
+		p_C2=l2/(l1+l2)
+		return(p_C1,p_C2)
+		\end{lstlisting}
+		Calling
+		\begin{lstlisting}[language=Python]
+	lengths=get_lengths()
+	print(get_priors(lengths[0],lengths[1]))
+		\end{lstlisting}
+		we get the following results for the prior probabilities: p(C1)=0.239 and p(C2)=0.761 .
+		\end{subtask}
+	\begin{subtask}
+		Having a data set $X$ and an estimator $\hat{\theta}$ on the true parameter $\theta$, we define the bias of an estimator as the expected deviation from the true parameter. We get the formula\begin{align*}bias(\hat{\theta})=\mathbb{E}_X\left[ \hat{\theta}(X)-\theta\right] 
+		\end{align*} We call an estimator unbiased iff $bias(\hat{\theta})=0$ and biased otherwise.\\From the lecture we know that the MLE of the mean of a Gaussian is unbiased, but the MLE of the variance of a Gaussian is biased. In fact, an unbiased estiamtor on the variance would be the sample covariance matrix \begin{align}\label{sigma}
+\hat{\Sigma}=\frac{1}{n-1}\sni(x_i-\hat{\mu})(x_i-\hat{\mu})^T \;.
+		\end{align}
+		To calculate the conditional distribution densities $p(x|C_i)$ we need to estimate the underlying parameters $\mu_i$ and $\Sigma_i$. For both classes we use the MLE-estimate of the mean, which is unbiased and calculated like in (\ref{mean}). We compute the biased MLE-estimate $\tilde{\Sigma}$ for the variance via (\ref{bsigma}) and the unbiased estimate $\hat{\Sigma}$ via (\ref{sigma}). We wrote the following python code
+		\begin{lstlisting}[language=Python]
+		def extract_data(t):
+			a=np.empty((0,2),float)
+			for line in t:
+				v=np.array([[line.split()[0],line.split()[1]]],float)
+				a=np.append(a,v,axis=0)
+			return a
+		
+		def get_mean_estimation(points):
+			m=np.zeros(2)
+			m[0]=sum(points[:,0])
+			m[1]=sum(points[:,1])
+			m=m/len(points)
+			return m
+		
+		def get_biased_var_estimation(mean_est,points):
+			l=points-mean_est
+			s=np.zeros((2,2))
+			for line in l:
+				s=s+np.outer(line,line)
+			s=s/len(l)
+		return s
+		
+		def get_unbiased_var_estimation(mean_est,points):
+			l=points-mean_est
+			s=np.zeros((2,2))
+			for line in l:
+				s=s+np.outer(line,line)
+			s=s/(len(l)-1)
+		return s
+		
+		def print_results(link):
+			a=extract_data(open(link))
+			mean=get_mean_estimation(a)
+			print("mean=",mean)
+			sigma=get_unbiased_var_estimation(mean,a)
+			print("biased_Sigma=",get_biased_var_estimation(mean,a))
+			print("sigma=",sigma)
+		\end{lstlisting}
+		which gives us the results for class C1
+		\begin{lstlisting}
+		print_results(link1)
+		
+		mean= [-0.70681374 -0.81343083]
+		biased_Sigma= [[9.01952586 2.67287085]
+				[2.67287085 3.59633965]]
+		sigma= [[9.05742302 2.6841014 ]
+			[2.6841014  3.61145033]]
+		\end{lstlisting}
+		and for class C2
+		\begin{lstlisting}
+		print_results(link2)
+		
+		mean= [3.98534252 3.98438364]
+		biased_Sigma= [[4.1753815  0.02758324]
+			[0.02758324 2.75296323]]
+		sigma= [[4.18087542 0.02761954]
+			[0.02761954 2.75658555]]
+		\end{lstlisting}
+		Transfered to the notation we introduced earlier, we get $\hat{\mu_1}=\begin{pmatrix}
+		-0.71\\-0.81
+		\end{pmatrix}$ with $\tilde{\Sigma_1}=\begin{pmatrix}
+		9.02 & 2.67\\2.67 & 3.6
+		\end{pmatrix}$ or with the unbiased $\hat{\Sigma_1}=\begin{pmatrix}9.06&2.68\\2.68&3.61
+		\end{pmatrix}$ for C1.\\ And $\hat{\mu_2}=\begin{pmatrix}
+		3.99\\3.98
+		\end{pmatrix}$ with $\tilde{\Sigma_2}=\begin{pmatrix}
+		4.18&0.03\\0.03&2.75
+		\end{pmatrix}$ or with the unbiased $\hat{\Sigma_2}=\begin{pmatrix}		4.18&0.03\\0.03&2.76
+		\end{pmatrix}$ for C2.\\
+		We can now just plug in into formula (\ref{gaussian}) to get \\for the biased estimate $p(x|C_i)=p(x|\hat{\mu_i},\tilde{\Sigma_i})$ \\and for the unbiased $p(x|C_i)=p(x|\hat{\mu_i},\hat{\Sigma_i})$, where the right hand sides are given like in (\ref{gaussian}).
+	\end{subtask}
+\begin{subtask}
+	Using the unbiased estimates $p(x|C_i)=p(x||\hat{\mu_i},\hat{\Sigma_i})$ from last task, for each class we plot the Gaussian in a single graph with the data points: Therefore we added 2 new functions to our code:
+	\begin{lstlisting}[language=Python]
+		def gaussian(x,mu,detsigma,sigmainv):
+			z=np.array(x-mu)
+			enum=np.exp(-0.5*np.dot(np.dot(z,sigmainv),np.transpose(z)))
+			denom=np.sqrt(np.power(2*np.pi,len(x))*detsigma)
+			return enum/denom
+		
+		def plot(link):
+			a=extract_data(open(link))
+			mean=get_mean_estimation(a)
+			print("mean=",mean)
+			sigma=get_unbiased_var_estimation(mean,a)
+			print("biased_Sigma=",get_biased_var_estimation(mean,a))
+			print("sigma=",sigma)
+			detsigma=np.linalg.det(sigma)
+			sigmainv=np.linalg.inv(sigma)
+			x=np.linspace(min(a[:,0]),max(a[:,0]),300)
+			y=np.linspace(min(a[:,1]),max(a[:,1]),300)
+			X,Y=np.meshgrid(x,y)
+			Z=np.empty_like(X)
+			i=0
+			while i<len(X):
+				j=0
+				while j<len(Y):
+					xy=np.array([X[i,j],Y[i,j]])
+					ergb=gaussian(xy,mean,detsigma,sigmainv)
+					Z[i,j]=ergb
+					j=j+1
+				i=i+1
+			plt.contourf(X,Y,Z,25)
+			plt.colorbar()
+			plt.scatter(a[:,0],a[:,1],alpha=1,c="white",s=0.8)
+			return
+	\end{lstlisting}
+	Calling "plot(link1)" gives us Figure 1 and "plot(link2)" gives Figure 2.
+	\begin{figure}[H]
+	\includegraphics[width=0.8\textwidth]{d1plot.png}
+	\caption{Gaussian ($\hat{\mu_1},\hat{\Sigma_1}$) and data points C1 in white}
+	\end{figure}
+	\begin{figure}[H]
+	\includegraphics[width=0.8\textwidth]{d2plot.png}
+	\caption{Gaussian ($\hat{\mu_2},\hat{\Sigma_2}$) and data points C2 in white}
+\end{figure}
+\end{subtask}\noindent
+\begin{subtask}
+	We are interested in $p(C_i|x)$. From Bayes' rule we know that this equals\begin{align*}
+		p(C_i|x)=\frac{p(x|C_i)p(C_i)}{\sum_j p(x|C_j)p(C_j)}
+	\end{align*}
+	which helps us a lot because we calculated all terms occuring in the right hand side. We add two more functions to our code:
+	\begin{lstlisting}[language=Python]
+		def postplot(link):
+			g=extract_data(open(link3))
+			a=extract_data(open(link))
+			prior=len(a)/len(g)
+			mean=get_mean_estimation(a)
+			sigma=get_unbiased_var_estimation(mean,a)
+			detsigma=np.linalg.det(sigma)
+			sigmainv=np.linalg.inv(sigma)
+			x=np.linspace(min(g[:,0]),max(g[:,0]),300)
+			y=np.linspace(min(g[:,1]),max(g[:,1]),300)
+			X,Y=np.meshgrid(x,y,sparse=False)
+			Z=np.empty_like(X)
+			i=0
+			while i<len(X):
+				j=0
+				while j<len(Y):
+					xy=np.array([X[i,j],Y[i,j]])
+					ergb=prior*gaussian(xy,mean,detsigma,sigmainv)
+					Z[i,j]=ergb
+					j=j+1
+				i=i+1
+			return [X,Y,Z,prior]
+		
+		def actual_plotting():
+			X,Y,Z1,p1=postplot(link1)
+			Z2,p2=postplot(link2)[2:4]
+			S=np.add(Z1,Z2)
+			Z1neu=np.divide(Z1,S)
+			Z2neu=np.divide(Z2,S)
+			plt.contour(X,Y,Z1,10)
+			plt.contour(X,Y,Z2,10)
+			plt.title("likelihood x prior")
+			plt.figure()
+			plt.contour(X,Y,Z1neu,10)
+			plt.colorbar()
+			plt.title("p(C1|x)")
+			plt.figure()
+			plt.contour(X,Y,Z2neu,10)
+			plt.colorbar()
+			plt.title("p(C2|x)")
+			plt.figure()
+			dec=np.greater(Z1neu,Z2neu)
+			plt.scatter(X,Y,dec)
+			plt.title("blue=decideC1, white=decideC2") 
+			j=0
+			mpoints=np.empty(shape=[0,2])
+			while j<len(X):
+				i=0
+				while i<len(Y):
+					if not dec[i,j]:
+						xy=np.array([[X[i,j],Y[i,j]]])
+						mpoints=np.append(mpoints,xy,axis=0)
+						break
+					i=i+1
+				j=j+1
+			plt.figure()
+			plt.scatter(mpoints[:,0],mpoints[:,1],s=0.5)
+			plt.title("decision boundary") 
+			plt.figure()
+			plt.contour(X,Y,Z1,10)
+			plt.contour(X,Y,Z2,10)
+			plt.scatter(mpoints[:,0],mpoints[:,1],s=0.5)
+    			plt.title("likelihood x prior and decbound")
+
+			return
+	\end{lstlisting}
+	Where in link3 we stored to a .txt file containing all data from C1 and C2 combined. This can be generated by executing
+	\begin{lstlisting}[language=Python]
+		def merge_txt(inp):
+			with open('../hw2/dataSets/densEstCombined.txt', 'w') as outfile:
+				for fname in inp:
+					with open(fname) as infile:
+						for line in infile:
+							outfile.write(line)
+			return
+	\end{lstlisting}
+	once, or just do it by hand. Calling actual\_plotting() then gives us the following results:
+	\begin{figure}[H]
+		\includegraphics{likexprior.png}
+	\end{figure}
+\begin{figure}[H]
+		\includegraphics{pc1x.png}
+\end{figure}
+\begin{figure}[H]
+	\includegraphics{pc2x.png}
+\end{figure}
+\begin{figure}[H]
+	\includegraphics{dec1.png}
+\end{figure}
+\begin{figure}[H]
+	\includegraphics{dec2.png}
+\end{figure}
+\begin{figure}[H]
+	\includegraphics{dec3.png}
+\end{figure}
+	\end{subtask}
 	\end{task}
 	
 \end{document}
