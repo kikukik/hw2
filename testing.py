@@ -32,8 +32,6 @@ def get_priors(l1,l2):
     p_C2=l2/(l1+l2)
     return(p_C1,p_C2)
 
-lengths=get_lengths()
-print(get_priors(lengths[0],lengths[1]))
 def extract_data(t):
     a=np.empty((0,2),float)
     for line in t:
