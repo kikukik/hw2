@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.14)  14 JUN 2020 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.14)  14 JUN 2020 14:06
 entering extended mode
 **./uebung2.tex
 (uebung2.tex
@@ -1353,40 +1353,48 @@ Package microtype Info: Character `textrbrackdbl ' is missing
 Package microtype Info: Character `texttildelow ' is missing
 (microtype)             in font `TS1/XCharter-TLF/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 94.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
- (uebung2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
+
+(uebung2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
 Package rerunfilecheck Info: File `uebung2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23514 strings out of 480797
- 436258 string characters out of 2905361
- 980873 words of memory out of 3000000
- 39122 multiletter control sequences out of 15000+200000
- 574576 words of font info for 72 fonts, out of 3000000 for 9000
+ 23985 strings out of 480797
+ 440677 string characters out of 2905361
+ 1115435 words of memory out of 3000000
+ 39562 multiletter control sequences out of 15000+200000
+ 581090 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,21n,81p,10131b,912s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/xcharter/xch_q7u3c
-c.enc}{C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/roboto/rbto_b5
-rac7.enc}{C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/xcharter/xc
-h_uy5hgr.enc}<C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/type1/google/robo
+ 59i,21n,81p,10131b,2342s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/xcharter/xch_uy5hg
+r.enc}{C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/xcharter/xch_q
+7u3cc.enc}{C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/roboto/rbt
+o_b5rac7.enc}<C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/type1/google/robo
 to/Roboto-Bold.pfb><C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/type1/googl
 e/roboto/Roboto-Regular.pfb><C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.9/fonts/ty
-pe1/public/xcharter/XCharter-Roman.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on uebung2.pdf (2 pages, 693665 bytes).
+pe1/public/xcharter/XCharter-Bold.pfb><C:/Users/No-Pa/AppData/Roaming/MiKTeX/2.
+9/fonts/type1/public/xcharter/XCharter-Roman.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on uebung2.pdf (3 pages, 751056 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 11286 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 11806 words of extra memory for PDF output out of 12000 (max. 10000000)
 

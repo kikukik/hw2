@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 link1="../hw2/dataSets/densEst1.txt"
 link2="../hw2/dataSets/densEst2.txt"
 link3="../hw2/dataSets/densEstCombined.txt"
-#test
+
 def merge_txt(inp):
     with open('../hw2/dataSets/densEstCombined.txt', 'w') as outfile:
         for fname in inp:
@@ -31,7 +31,9 @@ def get_priors(l1,l2):
     p_C1=l1/(l1+l2)
     p_C2=l2/(l1+l2)
     return(p_C1,p_C2)
-    
+
+lengths=get_lengths()
+print(get_priors(lengths[0],lengths[1]))
 def extract_data(t):
     a=np.empty((0,2),float)
     for line in t:

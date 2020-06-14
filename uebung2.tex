@@ -83,10 +83,39 @@ ngerman,
 			0&\stackrel{!}{=}\frac{d}{d\Sigma^{-1}}l(\hat{\mu},\Sigma)\\
 			0&\stackrel{!}{=}\frac{n}{2}\Sigma^T-\frac{1}{2}\sni(x_i-\hat{\mu})(x_i-\hat{\mu})^T
 		\end{align*}
-		which is solved for the biased MLE estimate
+		which is solved for the (biased) MLE estimate
 		\begin{align}
 			\tilde{\Sigma}=\frac{1}{n}\sni (x_i-\hat{\mu})(x_i-\hat{\mu})^T
 		\end{align}
+		\end{subtask}
+	\begin{subtask}
+		We compute the prior probabilities of C1 and C2, using the following python code. We read the number of data points in each class and divide it by the sum of total data points in both classes.
+		\begin{lstlisting}[language=Python]
+	import numpy as np
+	
+	link1="../hw2/dataSets/densEst1.txt"
+	link2="../hw2/dataSets/densEst2.txt"
+	
+	def get_lengths():
+		l1=0;
+		l2=0;
+		for line in open(link1):
+			l1=l1+1
+		for line2 in open(link2):
+			l2=l2+1
+		return (l1,l2)    
+	
+	def get_priors(l1,l2):
+		p_C1=l1/(l1+l2)
+		p_C2=l2/(l1+l2)
+		return(p_C1,p_C2)
+		\end{lstlisting}
+		Calling
+		\begin{lstlisting}[language=Python]
+	lengths=get_lengths()
+	print(get_priors(lengths[0],lengths[1]))
+		\end{lstlisting}
+		we get the following results for the prior probabilities: p(C1)=0.239 and p(C2)=0.761 .
 		\end{subtask}
 	\end{task}
 	
