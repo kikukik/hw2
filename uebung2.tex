@@ -500,6 +500,42 @@ Interpretation: the bigger the log-likelihood number, the higher the probability
 		\includegraphics{3cplot.png}
 	\end{figure}
 	\end{subtask}
+\begin{subtask}
+	We compute the log-likelihood of testing data and our estimators (estimated with the training data). \begin{center}\begin{tabular}{||c c c||}
+			\hline
+			method & log-likeli. on training & log-likeli. on testing \\ [0.5ex]
+			\hline \hline
+			gaussian 0.03 &-675 &-inf\\
+			gaussian 0.2 &-717 &-2904\\
+			gaussian 0.8 &-796 &-3189\\
+			2-NN &-59&-2299\\
+			8-NN &-627&-2708\\
+			35-NN&-694&-2786\\
+		\end{tabular}
+	\end{center}
+	The result is pretty clear. kNN with K=2 gave the best results. In general, the kNN methods outperformed the Gaussians. Another mentionable result is the density recieved by 8-NN because it is way more smooth than the 2-NN but this is, at the cost of likelihood on both training and testing data.\\
+	This data was computed by calling
+	\begin{lstlisting}[language=Python]
+	for sigma in [0.03, 0.2, 0.8]:
+		log_likehood_solution = log_likehood_gaussian(data, nonParamTest , sigma)
+		print("sigma:", sigma, "log_likehood_gaussian:", log_likehood_solution)
+	
+	for K in [2, 8, 35]:
+		log_likehood_solution = log_likehood_neighbor(data, nonParamTest, K)
+		print("K:", K, "log_likehood_neighbor:", log_likehood_solution)
+	for K in [2, 8, 35]:
+		log_likehood_solution = log_likehood_neighbor(data, data, K)
+		print("K:", K, "log_likehood_neighbor_training:", log_likehood_solution)
+	\end{lstlisting}
+	in our python file, where we only had to add one function to compute the log likelihood of a knn:
+	\begin{lstlisting}[language=Python]
+	def log_likehood_neighbor(data, log_like_data, K):
+		result = 0 
+		for i in range(len(log_like_data)):
+			result += m.log(k_nearest_neighbor(data, K, log_like_data[i]))
+		return result
+	\end{lstlisting}
+\end{subtask}
 \end{task}
 	
 \end{document}

@@ -87,26 +87,28 @@ if __name__ == "__main__":
         
         
     # 3c) K - Nearest - Neighbor
-    x = np.linspace(-4,8,400)
-    y = []
-    for K in [2, 8, 35]:
-        for i in range(len(x)):
-            y.append(k_nearest_neighbor(data,K,x[i]))
-        plt.plot(x,y,label="K="+ str(K))
-        plt.legend()
-        y = []
-    plt.show()
-    
-    # # 3d) Log Likehood 
-    
-    # for sigma in [0.03, 0.2, 0.8]:
-    #     log_likehood_solution = log_likehood_gaussian(data, nonParamTest , sigma)
-    #     print("sigma:", sigma, "log_likehood_gaussian:", log_likehood_solution)
-        
+    # x = np.linspace(-4,8,400)
+    # y = []
     # for K in [2, 8, 35]:
-    #     log_likehood_solution = log_likehood_neighbor(data, nonParamTest, K)
-    #     print("sigma:", K, "log_likehood_neighbor:", log_likehood_solution)
+    #     for i in range(len(x)):
+    #         y.append(k_nearest_neighbor(data,K,x[i]))
+    #     plt.plot(x,y,label="K="+ str(K))
+    #     plt.legend()
+    #     y = []
+    # plt.show()
     
+    # 3d) Log Likehood 
+    
+    for sigma in [0.03, 0.2, 0.8]:
+        log_likehood_solution = log_likehood_gaussian(data, nonParamTest , sigma)
+        print("sigma:", sigma, "log_likehood_gaussian:", log_likehood_solution)
+        
+    for K in [2, 8, 35]:
+        log_likehood_solution = log_likehood_neighbor(data, nonParamTest, K)
+        print("K:", K, "log_likehood_neighbor:", log_likehood_solution)
+    for K in [2, 8, 35]:
+        log_likehood_solution = log_likehood_neighbor(data, data, K)
+        print("K:", K, "log_likehood_neighbor_training:", log_likehood_solution)
     
     
     
