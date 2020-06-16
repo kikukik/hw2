@@ -16,19 +16,17 @@ nonParamTest = np.loadtxt("dataSets/nonParamTest.txt")
 
 
 def histogram(data, bin_size):
-    # funktion selber geschrieben, aber passt das?
     bins = np.arange(min(data), max(data) + bin_size, bin_size)
     hist = np.zeros((len(bins),2))
     hist[:,0] = bins
     for i in range(len(hist)):
-        print(i)
         for j in range(len(data)):
             if hist[i,0] <= data[j] < hist[i+1,0]:
                 hist[i,1] = hist[i,1] + 1
     hist[:,0] = hist[:,0] + 0.5 * bin_size
+    
     plt.bar(hist[:,0], hist[:,1], color="red", width=bin_size)
-    plt.plot(hist[:,0], hist[:,1])
-    # plt.hist(data, bins=np.arange(min(data), max(data) + bin_size, bin_size)) zur Überprüfung
+    plt.title("bin size="+ str(bin_size))       
     plt.show()
     
 def gaussian_kernel(data, x, sigma):
@@ -61,10 +59,12 @@ def k_nearest_neighbor(data,K,x):
 if __name__ == "__main__":
     # settings 3a)
     hist_data = nonParamTrain
-    hist_bin_size = 0.3
+    bin_sizes = [0.02,0.5,2,0.4]
     
     # 3a) Histogramme
-    histogram(hist_data, hist_bin_size)
+    for hist_bin_size in bin_sizes:
+        histogram(hist_data, hist_bin_size)
+        
     
     # # settings
     # data = nonParamTrain
