@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.14)  14 JUN 2020 22:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.14)  16 JUN 2020 12:38
 entering extended mode
 **./uebung2.tex
 (uebung2.tex
@@ -1343,8 +1343,13 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 
 {C:/Users/No-Pa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./tuda_logo
 .pdf>]
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 77.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 77.
+ [2]
 LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on inp
-ut line 64.
+ut line 115.
 
 (C:\Users\No-Pa\AppData\Roaming\MiKTeX\2.9\tex/latex/xcharter\ts1xcharter-tlf.f
 d
@@ -1352,7 +1357,7 @@ File: TS1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for TS1/XCharte
 r-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 64.
+(Font)              scaled to size 10.0pt on input line 115.
 Package microtype Info: Character `textlbrackdbl ' is missing
 (microtype)             in font `TS1/XCharter-TLF/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1362,115 +1367,116 @@ Package microtype Info: Character `textrbrackdbl ' is missing
 Package microtype Info: Character `texttildelow ' is missing
 (microtype)             in font `TS1/XCharter-TLF/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+ [3] ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 97.
- [2] [3]
+(Font)              scaled to size 10.0pt on input line 148.
+ [4]
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 145.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 153.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 157.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 172.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 172.
+(textcomp)             Default family used instead on input line 196.
 
-[4]
+[5]
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 205.
+(textcomp)             Default family used instead on input line 204.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 206.
-<d1plot.png, id=133, 374.39874pt x 252.945pt>
+(textcomp)             Default family used instead on input line 208.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 223.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 223.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 256.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 257.
+ [6]
+<d1plot.png, id=150, 374.39874pt x 252.945pt>
 File: d1plot.png Graphic file (type png)
 <use d1plot.png>
-Package pdftex.def Info: d1plot.png  used on input line 239.
+Package pdftex.def Info: d1plot.png  used on input line 290.
 (pdftex.def)             Requested size: 409.72125pt x 276.82387pt.
-<d2plot.png, id=135, 359.3425pt x 252.945pt>
+<d2plot.png, id=152, 359.3425pt x 252.945pt>
 File: d2plot.png Graphic file (type png)
 <use d2plot.png>
-Package pdftex.def Info: d2plot.png  used on input line 243.
+Package pdftex.def Info: d2plot.png  used on input line 294.
 (pdftex.def)             Requested size: 409.72125pt x 288.42976pt.
- [5] [6pdfTeX warning (ext4): destination with the same identifier (name{figure
+ [7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.250 	\end{align*}
+l.301 	\end{align*}
                    pdfTeX warning (ext4): destination with the same identifier 
 (name{figure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.250 	\end{align*}
+l.301 	\end{align*}
                     <./d1plot.png> <./d2plot.png>]
-Overfull \hbox (3.85562pt too wide) in paragraph at lines 270--271
+Overfull \hbox (3.85562pt too wide) in paragraph at lines 321--322
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[7]
-Overfull \hbox (21.8558pt too wide) in paragraph at lines 322--323
+[9]
+Overfull \hbox (21.8558pt too wide) in paragraph at lines 373--374
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<likexprior.png, id=235, 373.395pt x 264.99pt>
+<likexprior.png, id=247, 373.395pt x 264.99pt>
 File: likexprior.png Graphic file (type png)
 <use likexprior.png>
-Package pdftex.def Info: likexprior.png  used on input line 331.
+Package pdftex.def Info: likexprior.png  used on input line 382.
 (pdftex.def)             Requested size: 373.39409pt x 264.98935pt.
-<pc1x.png, id=236, 355.3275pt x 264.99pt>
+<pc1x.png, id=248, 355.3275pt x 264.99pt>
 File: pc1x.png Graphic file (type png)
 <use pc1x.png>
-Package pdftex.def Info: pc1x.png  used on input line 334.
+Package pdftex.def Info: pc1x.png  used on input line 385.
 (pdftex.def)             Requested size: 355.32661pt x 264.98935pt.
-<pc2x.png, id=237, 355.3275pt x 264.99pt>
+<pc2x.png, id=249, 355.3275pt x 264.99pt>
 File: pc2x.png Graphic file (type png)
 <use pc2x.png>
-Package pdftex.def Info: pc2x.png  used on input line 337.
+Package pdftex.def Info: pc2x.png  used on input line 388.
 (pdftex.def)             Requested size: 355.32661pt x 264.98935pt.
-[8 <./likexprior.png>]
-<dec1.png, id=270, 371.3875pt x 264.99pt>
+[10 <./likexprior.png>]
+<dec1.png, id=282, 371.3875pt x 264.99pt>
 File: dec1.png Graphic file (type png)
 <use dec1.png>
-Package pdftex.def Info: dec1.png  used on input line 340.
+Package pdftex.def Info: dec1.png  used on input line 391.
 (pdftex.def)             Requested size: 371.38658pt x 264.98935pt.
-<dec2.png, id=271, 371.3875pt x 264.99pt>
+<dec2.png, id=283, 371.3875pt x 264.99pt>
 File: dec2.png Graphic file (type png)
 <use dec2.png>
-Package pdftex.def Info: dec2.png  used on input line 343.
+Package pdftex.def Info: dec2.png  used on input line 394.
 (pdftex.def)             Requested size: 371.38658pt x 264.98935pt.
- [9 <./pc1x.png> <./pc2x.png>]
-<dec3.png, id=278, 371.3875pt x 264.99pt>
+ [11 <./pc1x.png> <./pc2x.png>]
+<dec3.png, id=290, 371.3875pt x 264.99pt>
 File: dec3.png Graphic file (type png)
 <use dec3.png>
-Package pdftex.def Info: dec3.png  used on input line 346.
+Package pdftex.def Info: dec3.png  used on input line 397.
 (pdftex.def)             Requested size: 371.38658pt x 264.98935pt.
- [10 <./dec1.png> <./dec2.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
- [11 <./dec3.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+ [12 <./dec1.png> <./dec2.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
+ [13 <./dec3.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
  (uebung2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 402.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
 Package rerunfilecheck Info: File `uebung2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24379 strings out of 480797
- 445945 string characters out of 2905361
- 1135077 words of memory out of 3000000
- 39754 multiletter control sequences out of 15000+200000
- 582830 words of font info for 85 fonts, out of 3000000 for 9000
+ 24405 strings out of 480797
+ 446424 string characters out of 2905361
+ 1134785 words of memory out of 3000000
+ 39762 multiletter control sequences out of 15000+200000
+ 596582 words of font info for 95 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,21n,81p,10131b,2342s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\No-Pa\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
@@ -1490,9 +1496,9 @@ ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on uebung2.pdf (11 pages, 981305 bytes).
+Output written on uebung2.pdf (13 pages, 991455 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 209 named destinations out of 1000 (max. 500000)
- 12894 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 427 PDF objects out of 1000 (max. 8388607)
+ 215 named destinations out of 1000 (max. 500000)
+ 13950 words of extra memory for PDF output out of 14400 (max. 10000000)
 
