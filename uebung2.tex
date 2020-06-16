@@ -424,6 +424,82 @@ ngerman,
 \end{figure}
 Intuitively, we suggest that the best bin-size from the three would be 0.5. Obviously, 0.02 is too small. Fixing a bin with that bin size, we got a very low probability of having even a single sample in the bin. We are very reliant on the randomly chosen data points, and therefore get a histogram where neighbored bins vary a lot. On the other hand, we see that a bin size of 2.0 gives us a result that is too smooth. We lose information of the shape of the underlying density by generalizing too much (we put too many, almost all, data points in one bowl, leaving no space for local changes in the density function). For bin size 0.5 we seem to be about right, because we see enough structure to guess the underlying distribution, and neighbored bins still seem related to another which emphasizes our idea of an underlying continuous density. This is refered to as the Bias-Variance Problem.
 	\end{subtask}
+\begin{subtask}
+	We compute the probability density estimates for Gaussian kernels with three different variances. Also we compute the log-likelihood of these estimates. Therefore we implement \begin{lstlisting}[language=Python]
+def gaussian_kernel(data, x, sigma):
+	result = 0
+	for i in range(len(data)):
+		result += m.exp(-(x-data[i])**2 / (2 * sigma**2))
+	result = (result/(len(data) * m.sqrt(2 * m.pi * sigma**2)))
+	return result
+
+def log_likehood_gaussian(data, log_like_data, sigma):
+	result = 0
+	for i in range(len(log_like_data)):
+		result += np.log(gaussian_kernel(data, log_like_data[i], sigma))
+	return result
+	\end{lstlisting}
+	and calling
+	\begin{lstlisting}[language=Python]
+	# # settings
+	data = nonParamTrain
+	# plot densities
+	x = np.linspace(-4,8,100)
+	y = []
+	for sigma in [0.03, 0.2, 0.8]:
+		for i in range(len(x)):
+			y.append(gaussian_kernel(data, x[i], sigma))
+		plt.plot(x,y,label=str(sigma))
+		plt.legend()
+		y = []
+	plt.show()
+	
+	
+	# log-likehood
+	for sigma in [0.03, 0.2, 0.8]:
+		log_likehood_solution = log_likehood_gaussian(data, data, sigma)
+		print("sigma:", sigma, "log_likehood:", log_likehood_solution)
+	\end{lstlisting}
+	we get the following plot of the densities, labeled with the sigma value of the Gaussian kernel:
+	\begin{figure}[H]
+		\includegraphics{3bplot.png}
+	\end{figure}
+and the following results for the log likelihoods:
+\begin{lstlisting}
+sigma: 0.03 log_likehood: -674.7279387090639
+sigma: 0.2 log_likehood: -717.0216577444168
+sigma: 0.8 log_likehood: -795.6632833459039
+\end{lstlisting}
+Interpretation: the bigger the log-likelihood number, the higher the probability that our data actually has the underlying density. Only taking this into account, we should decide on sigma=0.03. One could argue though, that the density for sigma=0.03 is not very smooth. So if we want to take this 'smoothness' into account without losing too much likelihood, we could select sigma=0.2 as a fair trade-off.
+	\end{subtask}
+\begin{subtask}
+	We estimate the probability density with the K-nearest neighbors method with $K=2,8,35$. In the plot we see that the bigger K gets, the smoother our estimate gets. This is, once again, because for big K we sum up a big amount of data points and therefore we 'lose' information on local peaks. We wrote the function
+	\begin{lstlisting}[language=Python]
+	def k_nearest_neighbor(data,K,x):
+		values = np.column_stack((data, data))
+		values[:,0] = abs(values[:,0] - x)
+		values = values[values[:,0].argsort()]
+		result = values[K-1,0]
+		v=2*result
+		return (K / (v * len(data)))
+	\end{lstlisting}
+	and called with 
+	\begin{lstlisting}[language=Python]
+	x = np.linspace(-4,8,400)
+	y = []
+	for K in [2, 8, 35]:
+		for i in range(len(x)):
+			y.append(k_nearest_neighbor(data,K,x[i]))
+		plt.plot(x,y,label="K="+ str(K))
+		plt.legend()
+		y = []
+	plt.show()
+	\end{lstlisting}
+	we get the following graphs:
+	\begin{figure}[H]
+		\includegraphics{3cplot.png}
+	\end{figure}
+	\end{subtask}
 \end{task}
 	
 \end{document}

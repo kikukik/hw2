@@ -52,33 +52,33 @@ def k_nearest_neighbor(data,K,x):
     values = np.column_stack((data, data))
     values[:,0] = abs(values[:,0] - x)
     values = values[values[:,0].argsort()]
-    result = values[K,0]
-    return (K / (result * len(data)))
+    result = values[K-1,0]
+    v=result*2
+    return (K / (v * len(data)))
     
 
 if __name__ == "__main__":
     # settings 3a)
-    hist_data = nonParamTrain
-    bin_sizes = [0.02,0.5,2,0.4]
+    #hist_data = nonParamTrain
+    #bin_sizes = [0.02,0.5,2,0.4]
     
     # 3a) Histogramme
-    for hist_bin_size in bin_sizes:
-        histogram(hist_data, hist_bin_size)
+    #for hist_bin_size in bin_sizes:
+     #   histogram(hist_data, hist_bin_size)
         
     
-    # # settings
-    # data = nonParamTrain
-    
+     # # settings
+    data = nonParamTrain
     # # plot densities
     # x = np.linspace(-4,8,100)
     # y = []
     # for sigma in [0.03, 0.2, 0.8]:
     #     for i in range(len(x)):
     #         y.append(gaussian_kernel(data, x[i], sigma))
-    #     plt.plot(x,y)
+    #     plt.plot(x,y,label="sigma="+ str(sigma))
+    #     plt.legend()
     #     y = []
     # plt.show()
-    
     # # log-likehood
     
     # for sigma in [0.03, 0.2, 0.8]:
@@ -86,15 +86,16 @@ if __name__ == "__main__":
     #     print("sigma:", sigma, "log_likehood:", log_likehood_solution)
         
         
-    # # 3c) K - Nearest - Neighbor
-    # x = np.linspace(-4,8,1200)
-    # y = []
-    # for K in [2, 8, 35]:
-    #     for i in range(len(x)):
-    #         y.append(k_nearest_neighbor(data,K,x[i]))
-    #     plt.plot(x,y)
-    #     y = []
-    # plt.show()
+    # 3c) K - Nearest - Neighbor
+    x = np.linspace(-4,8,400)
+    y = []
+    for K in [2, 8, 35]:
+        for i in range(len(x)):
+            y.append(k_nearest_neighbor(data,K,x[i]))
+        plt.plot(x,y,label="K="+ str(K))
+        plt.legend()
+        y = []
+    plt.show()
     
     # # 3d) Log Likehood 
     
