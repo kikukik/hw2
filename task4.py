@@ -8,11 +8,9 @@ Task 4
 """
 
 #imports
-import math as m
 import numpy as np
+import time
 from matplotlib import pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D  
-from tqdm import tqdm
 
 #data
 gmm_data_points = np.loadtxt("dataSets/gmm.txt")
@@ -43,13 +41,13 @@ def gaussian_density_function(x, mu, sigma):
 
 #e step
 def e_step(gauss):
-    alpha = np.zeros((N, 4)) #4 wegen 4 versch. gaußverteilungen
+    alpha = np.zeros((N, 4))
     for j in range(4):
         for i in range(N):
-            q = 0
-            for p in range(4):
-                q = q + gauss[p][2] * gaussian_density_function(gmm_data_points[i], gauss[p][0], gauss[p][1])
-            alpha[i,j] = (gauss[j][2] * gaussian_density_function(gmm_data_points[i], gauss[j][0], gauss[j][1]))/q
+            alpha[i,j] = gauss[j][2] * gaussian_density_function(gmm_data_points[i], gauss[j][0], gauss[j][1])
+    q=np.sum(alpha,axis=1)
+    for i in range(len(q)):
+        alpha[i,:]=np.divide(alpha[i,:],q[i])
     return alpha
 
 #m step
@@ -58,10 +56,7 @@ def m_step(gauss, alpha):
         # mu new
         
         # caclulate N_j
-        N_j = 0
-        for p in range(N):
-            N_j = N_j + alpha[p,j]
-            
+        N_j=np.sum(alpha[:,j])
         # calculate mu
         gauss[j][0] = np.array([0,0])
         for i in range(N):
@@ -69,27 +64,15 @@ def m_step(gauss, alpha):
         gauss[j][0] = gauss[j][0] / N_j
         
         # sigma new
-        gauss[j][1] = np.matrix([[0,0],[0,0]])
+        gauss[j][1] = np.zeros([2,2])
         for i in range(N):
             gauss[j][1] = gauss[j][1] + alpha[i,j]*np.outer(gmm_data_points[i] - gauss[j][0],gmm_data_points[i] - gauss[j][0])
         gauss[j][1] = gauss[j][1] / N_j
         # pi new
         gauss[j][2] = N_j / N
     return gauss
-        
-            
-            
-        
-
-if __name__ == "__main__":
-    for i in range(30):
-        alpha = e_step(gauss1)
-        gauss1 = m_step(gauss1, alpha)
-        result = log_likehood_gaussian(gmm_data_points,gauss1)
-        print(result)
-    
-    gauss = gauss1
-        
+ 
+def plot_all(gauss):
     delta = 0.25
     x = np.arange(-5.0, 5.0, delta)
     y = np.arange(-5.0, 5.0, delta)
@@ -111,4 +94,22 @@ if __name__ == "__main__":
     plt.contour(xx,yy,height3, colors = 'yellow')
     plt.contour(xx,yy,height4, colors = 'green')
     plt.show()
-    
+    return
+            
+if __name__ == "__main__":
+    t=time.time()
+    result=np.zeros([31])
+    for i in range(31):
+        a2=e_step(gauss1)
+        gauss1 = m_step(gauss1, a2)
+        result[i] = log_likehood_gaussian(gmm_data_points,gauss1)
+        if i in [1,3,5,10,30]:
+            plt.title("iteration="+str(i))
+            plot_all(gauss1)
+    plt.scatter(np.arange(31),result)
+    plt.xlabel('iteration')
+    plt.ylabel('log likelihood')
+    plt.show()
+    elapsed = time.time()-t
+    print(elapsed)
+
