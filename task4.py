@@ -97,7 +97,7 @@ def plot_all(gauss):
     return
             
 if __name__ == "__main__":
-    t=time.time()
+ #   t=time.time()
     result=np.zeros([31])
     for i in range(31):
         a2=e_step(gauss1)
@@ -110,6 +110,6 @@ if __name__ == "__main__":
     plt.xlabel('iteration')
     plt.ylabel('log likelihood')
     plt.show()
-    elapsed = time.time()-t
-    print(elapsed)
+#    elapsed = time.time()-t
+   # print(elapsed)
 

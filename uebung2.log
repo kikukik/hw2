@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.14)  16 JUN 2020 22:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.14)  20 JUN 2020 18:32
 entering extended mode
 **./uebung2.tex
 (uebung2.tex
@@ -1425,265 +1425,231 @@ Overfull \hbox (3.85562pt too wide) in paragraph at lines 321--322
  []
 
 [9]
-Overfull \hbox (21.8558pt too wide) in paragraph at lines 373--374
+Overfull \hbox (21.8558pt too wide) in paragraph at lines 382--383
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 <likexprior.png, id=247, 373.395pt x 264.99pt>
 File: likexprior.png Graphic file (type png)
 <use likexprior.png>
-Package pdftex.def Info: likexprior.png  used on input line 382.
+Package pdftex.def Info: likexprior.png  used on input line 391.
 (pdftex.def)             Requested size: 373.39409pt x 264.98935pt.
 <pc1x.png, id=248, 355.3275pt x 264.99pt>
 File: pc1x.png Graphic file (type png)
 <use pc1x.png>
-Package pdftex.def Info: pc1x.png  used on input line 385.
+Package pdftex.def Info: pc1x.png  used on input line 394.
 (pdftex.def)             Requested size: 355.32661pt x 264.98935pt.
-<pc2x.png, id=249, 355.3275pt x 264.99pt>
+[10]
+<pc2x.png, id=289, 355.3275pt x 264.99pt>
 File: pc2x.png Graphic file (type png)
 <use pc2x.png>
-Package pdftex.def Info: pc2x.png  used on input line 388.
+Package pdftex.def Info: pc2x.png  used on input line 397.
 (pdftex.def)             Requested size: 355.32661pt x 264.98935pt.
-[10 <./likexprior.png>]
-<dec1.png, id=282, 371.3875pt x 264.99pt>
+<dec1.png, id=290, 371.3875pt x 264.99pt>
 File: dec1.png Graphic file (type png)
 <use dec1.png>
-Package pdftex.def Info: dec1.png  used on input line 391.
+Package pdftex.def Info: dec1.png  used on input line 400.
 (pdftex.def)             Requested size: 371.38658pt x 264.98935pt.
-<dec2.png, id=283, 371.3875pt x 264.99pt>
+ [11 <./likexprior.png> <./pc1x.png>]
+<dec2.png, id=297, 371.3875pt x 264.99pt>
 File: dec2.png Graphic file (type png)
 <use dec2.png>
-Package pdftex.def Info: dec2.png  used on input line 394.
+Package pdftex.def Info: dec2.png  used on input line 403.
 (pdftex.def)             Requested size: 371.38658pt x 264.98935pt.
- [11 <./pc1x.png> <./pc2x.png>]
-<dec3.png, id=290, 371.3875pt x 264.99pt>
+<dec3.png, id=298, 371.3875pt x 264.99pt>
 File: dec3.png Graphic file (type png)
 <use dec3.png>
-Package pdftex.def Info: dec3.png  used on input line 397.
+Package pdftex.def Info: dec3.png  used on input line 406.
 (pdftex.def)             Requested size: 371.38658pt x 264.98935pt.
- [12 <./dec1.png> <./dec2.png>]
-<h002.png, id=297, 369.38pt x 264.99pt>
+ [12 <./pc2x.png> <./dec1.png>]
+<dec4.png, id=305, 355.3275pt x 264.99pt>
+File: dec4.png Graphic file (type png)
+<use dec4.png>
+Package pdftex.def Info: dec4.png  used on input line 409.
+(pdftex.def)             Requested size: 355.32661pt x 264.98935pt.
+<dec5.png, id=306, 355.3275pt x 264.99pt>
+File: dec5.png Graphic file (type png)
+<use dec5.png>
+Package pdftex.def Info: dec5.png  used on input line 412.
+(pdftex.def)             Requested size: 355.32661pt x 264.98935pt.
+
+[13 <./dec2.png> <./dec3.png>] [14 <./dec4.png> <./dec5.png>]
+<h002.png, id=322, 369.38pt x 264.99pt>
 File: h002.png Graphic file (type png)
 <use h002.png>
-Package pdftex.def Info: h002.png  used on input line 421.
+Package pdftex.def Info: h002.png  used on input line 436.
 (pdftex.def)             Requested size: 256.07481pt x 183.70454pt.
-<h05.png, id=298, 376.40625pt x 264.99pt>
+<h05.png, id=323, 376.40625pt x 264.99pt>
 File: h05.png Graphic file (type png)
 <use h05.png>
-Package pdftex.def Info: h05.png  used on input line 422.
+Package pdftex.def Info: h05.png  used on input line 437.
 (pdftex.def)             Requested size: 256.07481pt x 180.28786pt.
 
-Overfull \hbox (1.85301pt too wide) in paragraph at lines 421--422
+Overfull \hbox (1.85301pt too wide) in paragraph at lines 436--437
 [][] [] 
  []
 
-<h2.png, id=299, 376.40625pt x 264.99pt>
+<h2.png, id=324, 376.40625pt x 264.99pt>
 File: h2.png Graphic file (type png)
 <use h2.png>
-Package pdftex.def Info: h2.png  used on input line 423.
+Package pdftex.def Info: h2.png  used on input line 438.
 (pdftex.def)             Requested size: 256.07481pt x 180.28786pt.
-[13 <./dec3.png>]
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 432.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 432.
- [14 <./h002.png> <./h05.png> <./h2.png>]
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 444.
+[15 <./h002.png> <./h05.png> <./h2.png>]
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
 (textcomp)             Default family used instead on input line 447.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 458.
-<3bplot.png, id=338, 373.395pt x 248.93pt>
+(textcomp)             Default family used instead on input line 447.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 459.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 462.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 473.
+<3bplot.png, id=346, 373.395pt x 248.93pt>
 File: 3bplot.png Graphic file (type png)
 <use 3bplot.png>
-Package pdftex.def Info: 3bplot.png  used on input line 465.
+Package pdftex.def Info: 3bplot.png  used on input line 480.
 (pdftex.def)             Requested size: 373.39409pt x 248.92938pt.
+ [16]
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 469.
+(textcomp)             Default family used instead on input line 484.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 470.
+(textcomp)             Default family used instead on input line 485.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 471.
- [15 <./3bplot.png>]
+(textcomp)             Default family used instead on input line 486.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 480.
+(textcomp)             Default family used instead on input line 495.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 482.
+(textcomp)             Default family used instead on input line 497.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 488.
-<3cplot.png, id=374, 373.395pt x 248.93pt>
+(textcomp)             Default family used instead on input line 503.
+ [17 <./3bplot.png>]
+<3cplot.png, id=412, 373.395pt x 248.93pt>
 File: 3cplot.png Graphic file (type png)
 <use 3cplot.png>
-Package pdftex.def Info: 3cplot.png  used on input line 500.
+Package pdftex.def Info: 3cplot.png  used on input line 515.
 (pdftex.def)             Requested size: 373.39409pt x 248.92938pt.
 
-[16 <./3cplot.png>]
-Overfull \hbox (21.8558pt too wide) in paragraph at lines 520--521
+Overfull \hbox (21.8558pt too wide) in paragraph at lines 535--536
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (9.85568pt too wide) in paragraph at lines 521--523
+Overfull \hbox (9.85568pt too wide) in paragraph at lines 536--538
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (15.85574pt too wide) in paragraph at lines 528--529
+Overfull \hbox (15.85574pt too wide) in paragraph at lines 543--544
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (3.85562pt too wide) in paragraph at lines 535--536
+[18 <./3cplot.png>]
+Overfull \hbox (3.85562pt too wide) in paragraph at lines 550--551
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[17]
-Overfull \hbox (1521.87106pt too wide) in paragraph at lines 570--571
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
+[19]
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 598.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 598.
+Package textcomp Info: Symbol \textminus not provided by
+(textcomp)             font family XCharter-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 598.
 
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 578.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 578.
-Package textcomp Info: Symbol \textminus not provided by
-(textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 578.
-
-Overfull \hbox (81.85641pt too wide) in paragraph at lines 578--579
+Overfull \hbox (33.85593pt too wide) in paragraph at lines 598--599
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][] 
  []
 
-
-Overfull \hbox (267.8583pt too wide) in paragraph at lines 587--588
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[18]
-Overfull \hbox (21.8558pt too wide) in paragraph at lines 603--604
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 609.
+(textcomp)             Default family used instead on input line 632.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 609.
-
-Overfull \hbox (363.85928pt too wide) in paragraph at lines 609--610
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][] 
- []
-
+(textcomp)             Default family used instead on input line 633.
+[20]
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 617.
+(textcomp)             Default family used instead on input line 641.
 Package textcomp Info: Symbol \textminus not provided by
 (textcomp)             font family XCharter-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 618.
-
-Overfull \hbox (189.85751pt too wide) in paragraph at lines 626--627
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (195.85757pt too wide) in paragraph at lines 627--628
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (195.85757pt too wide) in paragraph at lines 628--629
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (195.85757pt too wide) in paragraph at lines 629--631
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (3.85562pt too wide) in paragraph at lines 631--632
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-[19]
-<i1.png, id=528, 371.3875pt x 264.99pt>
+(textcomp)             Default family used instead on input line 642.
+<i1.png, id=525, 371.3875pt x 264.99pt>
 File: i1.png Graphic file (type png)
 <use i1.png>
-Package pdftex.def Info: i1.png  used on input line 656.
+Package pdftex.def Info: i1.png  used on input line 684.
 (pdftex.def)             Requested size: 256.07481pt x 182.71794pt.
-<i2.png, id=529, 371.3875pt x 264.99pt>
+<i2.png, id=526, 371.3875pt x 264.99pt>
 File: i2.png Graphic file (type png)
 <use i2.png>
-Package pdftex.def Info: i2.png  used on input line 657.
+Package pdftex.def Info: i2.png  used on input line 685.
 (pdftex.def)             Requested size: 256.07481pt x 182.71794pt.
-<i3.png, id=530, 371.3875pt x 264.99pt>
+<i3.png, id=527, 371.3875pt x 264.99pt>
 File: i3.png Graphic file (type png)
 <use i3.png>
-Package pdftex.def Info: i3.png  used on input line 658.
+Package pdftex.def Info: i3.png  used on input line 686.
 (pdftex.def)             Requested size: 256.07481pt x 182.71794pt.
-<i4.png, id=531, 371.3875pt x 264.99pt>
+<i4.png, id=528, 371.3875pt x 264.99pt>
 File: i4.png Graphic file (type png)
 <use i4.png>
-Package pdftex.def Info: i4.png  used on input line 659.
+Package pdftex.def Info: i4.png  used on input line 687.
 (pdftex.def)             Requested size: 256.07481pt x 182.71794pt.
-<i5.png, id=532, 371.3875pt x 264.99pt>
+<i5.png, id=529, 371.3875pt x 264.99pt>
 File: i5.png Graphic file (type png)
 <use i5.png>
-Package pdftex.def Info: i5.png  used on input line 660.
+Package pdftex.def Info: i5.png  used on input line 688.
 (pdftex.def)             Requested size: 256.07481pt x 182.71794pt.
-<ilog.png, id=533, 404.51125pt x 262.9825pt>
+<ilog.png, id=530, 404.51125pt x 262.9825pt>
 File: ilog.png Graphic file (type png)
 <use ilog.png>
-Package pdftex.def Info: ilog.png  used on input line 661.
+Package pdftex.def Info: ilog.png  used on input line 689.
 (pdftex.def)             Requested size: 256.07481pt x 166.48239pt.
 
-Overfull \hbox (1.85301pt too wide) in paragraph at lines 656--662
+Overfull \hbox (1.85301pt too wide) in paragraph at lines 684--690
 [][] []
  []
 
 
-Overfull \hbox (1.85301pt too wide) in paragraph at lines 656--662
+Overfull \hbox (1.85301pt too wide) in paragraph at lines 684--690
 [] []
  []
 
 
-Overfull \hbox (1.85301pt too wide) in paragraph at lines 656--662
+Overfull \hbox (1.85301pt too wide) in paragraph at lines 684--690
 [] [] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 666.
-[20 <./i1.png> <./i2.png> <./i3.png> <./i4.png> <./i5.png> <./ilog.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 666.
+[21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 694.
+ [22 <./i1.png> <./i2.png> <./i3.png> <./i4.png> <./i5.png> <./ilog.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 694.
 
 (uebung2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 666.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 666.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 694.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 694.
 Package rerunfilecheck Info: File `uebung2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24797 strings out of 480797
- 452147 string characters out of 2905361
- 1145785 words of memory out of 3000000
- 39908 multiletter control sequences out of 15000+200000
- 607720 words of font info for 121 fonts, out of 3000000 for 9000
+ 24836 strings out of 480797
+ 452718 string characters out of 2905361
+ 1140785 words of memory out of 3000000
+ 39918 multiletter control sequences out of 15000+200000
+ 608047 words of font info for 123 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,21n,81p,10131b,2342s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\No-Pa\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
@@ -1706,9 +1672,9 @@ public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb>
-Output written on uebung2.pdf (20 pages, 1246217 bytes).
+Output written on uebung2.pdf (22 pages, 1271019 bytes).
 PDF statistics:
- 744 PDF objects out of 1000 (max. 8388607)
- 416 named destinations out of 1000 (max. 500000)
- 19181 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 784 PDF objects out of 1000 (max. 8388607)
+ 440 named destinations out of 1000 (max. 500000)
+ 19191 words of extra memory for PDF output out of 20736 (max. 10000000)
 
